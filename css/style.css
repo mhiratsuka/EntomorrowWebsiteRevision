@@ -7910,3 +7910,9 @@ section#ted h3 {
 section#ted iframe {
   margin-bottom: 1em;
   min-height: 315px !important; }
+
+nav img {
+  height: 100px; }
+
+ul.navbar-nav li {
+  margin-right: 1em; }
