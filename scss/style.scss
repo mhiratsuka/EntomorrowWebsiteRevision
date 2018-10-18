@@ -2,8 +2,10 @@
 This is Bootstrap SCSS
  */
 
- 
+
 @import "bootstrap-scss/bootstrap";
+@import "fonts/google-font";
+@import "general/general";
 
 @import "michika/ted";
 @import "mario/navbar";

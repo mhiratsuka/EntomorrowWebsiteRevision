@@ -7,6 +7,7 @@ This is Bootstrap SCSS
  * Copyright 2011-2018 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+@import url("https://fonts.googleapis.com/css?family=Poppins|Raleway");
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -7900,6 +7901,9 @@ a.text-dark:hover, a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6; } }
 
+body {
+  font-family: 'Raleway', sans-serif; }
+
 /* MICHIKA CODE*/
 img {
   max-width: 100%; }
@@ -7910,6 +7914,10 @@ section#ted h3 {
 section#ted iframe {
   margin-bottom: 1em;
   min-height: 315px !important; }
+
+nav h1.nav-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem; }
 
 nav img {
   height: 100px; }
