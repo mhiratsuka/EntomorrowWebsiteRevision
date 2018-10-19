@@ -7,7 +7,12 @@ This is Bootstrap SCSS
 @import "fonts/google-font";
 @import "general/general";
 
+@import "bootstrap-scss/variables";
+
 @import "michika/ted";
-@import "mario/navbar";
+
+
+@import "mario/header";
+@import "mario/problem";
 
 

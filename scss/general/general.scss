@@ -1,3 +1,24 @@
+/* 
+// General Override
+//
+// This is a code to override the basic CSS element.
+//  
+*/
+
+html{
+
+}
+
+a{
+	color: $body-color;
+}
+
 body{
 	font-family: 'Raleway', sans-serif;
+	// background-color: $black;
+	// color: $body-color;
+}
+
+section{
+	margin-top: 2em;
 }

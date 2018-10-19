@@ -7901,8 +7901,20 @@ a.text-dark:hover, a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6; } }
 
+/* 
+// General Override
+//
+// This is a code to override the basic CSS element.
+//  
+*/
+a {
+  color: #212529; }
+
 body {
   font-family: 'Raleway', sans-serif; }
+
+section {
+  margin-top: 2em; }
 
 /* MICHIKA CODE*/
 img {
@@ -7915,6 +7927,17 @@ section#ted iframe {
   margin-bottom: 1em;
   min-height: 315px !important; }
 
+/* 
+// Header CSS - Mario
+//
+// Start of Header CSS
+//  
+*/
+#banner {
+  height: -webkit-calc(100vh - 43px);
+  height: calc(100vh - 43px);
+  background-color: #8CA2A2; }
+
 nav h1.nav-title {
   font-family: 'Poppins', sans-serif;
   font-size: 1rem; }
@@ -7922,7 +7945,21 @@ nav h1.nav-title {
 nav img {
   height: 100px; }
 
-ul.navbar-nav li {
-  margin-right: 1em; }
+nav a {
+  color: #f8f9fa; }
+
+ul.navbar-nav {
+  color: #f8f9fa; }
+  ul.navbar-nav li {
+    margin-right: 1em; }
+
+/* 
+// Problem CSS - Mario
+//
+// Start of Problem section CSS
+//  
+*/
+#problem {
+  font-size: 100px; }
 
 /*# sourceMappingURL=map/style.css.map */
