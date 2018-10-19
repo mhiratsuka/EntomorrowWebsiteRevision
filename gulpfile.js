@@ -2,6 +2,7 @@ var gulp        = require('gulp');
 var browserSync = require('browser-sync');
 var sass        = require('gulp-sass');
 var prefix      = require('gulp-autoprefixer');
+var sourcemaps  = require('gulp-sourcemaps');
 
 
 
@@ -29,12 +30,14 @@ gulp.task('browser-sync', ['sass'], function() {
  */
 gulp.task('sass', function () {
     return gulp.src('scss/*.scss')
+        .pipe(sourcemaps.init())
         .pipe(sass({
             includePaths: ['scss'],
             onError: browserSync.notify('Error in sass')
         }))
         .on('error', sass.logError)
         .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
+        .pipe(sourcemaps.write('map'))
         .pipe(gulp.dest('css'))
         .pipe(browserSync.reload({stream:true}));
 });

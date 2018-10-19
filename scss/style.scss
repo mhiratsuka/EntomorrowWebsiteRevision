@@ -2,9 +2,17 @@
 This is Bootstrap SCSS
  */
 
- 
+
 @import "bootstrap-scss/bootstrap";
+@import "fonts/google-font";
+@import "general/general";
+
+@import "bootstrap-scss/variables";
 
 @import "michika/ted";
+
+
+@import "mario/header";
+@import "mario/problem";
 
 
