@@ -7946,7 +7946,8 @@ footer .copyright {
 #banner {
   height: -webkit-calc(100vh - 43px);
   height: calc(100vh - 43px);
-  background-color: #8CA2A2; }
+  background-color: #8CA2A2;
+  position: relative; }
 
 nav h1.nav-title {
   font-family: 'Poppins', sans-serif;
@@ -7962,6 +7963,14 @@ ul.navbar-nav {
   color: #f8f9fa; }
   ul.navbar-nav li {
     margin-right: 1em; }
+
+svg#main-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
 
 /* 
 // Problem CSS - Mario
