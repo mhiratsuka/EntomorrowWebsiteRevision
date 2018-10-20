@@ -7927,6 +7927,16 @@ section#ted iframe {
   margin-bottom: 1em;
   min-height: 315px !important; }
 
+/* MICHIKA CODE*/
+footer .partner {
+  text-align: center; }
+  footer .partner img {
+    max-width: 30%;
+    height: auto; }
+
+footer .copyright {
+  text-align: center; }
+
 /* 
 // Header CSS - Mario
 //
