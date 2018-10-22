@@ -7944,33 +7944,97 @@ footer .copyright {
 //  
 */
 #banner {
-  height: -webkit-calc(100vh - 43px);
-  height: calc(100vh - 43px);
+  height: -webkit-calc(100vh - 55px);
+  height: calc(100vh - 55px);
   background-color: #8CA2A2;
   position: relative; }
 
-nav h1.nav-title {
-  font-family: 'Poppins', sans-serif;
-  font-size: 1rem; }
-
-nav img {
-  height: 100px; }
-
-nav a {
-  color: #f8f9fa; }
+nav {
+  height: 55px; }
+  nav h1.nav-title {
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin-bottom: 0; }
+  nav img {
+    height: 100px; }
+  nav a {
+    color: #f8f9fa; }
 
 ul.navbar-nav {
   color: #f8f9fa; }
   ul.navbar-nav li {
-    margin-right: 1em; }
+    margin-left: 2em; }
 
 svg#main-logo {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%); }
+  display: inline-block;
+  -webkit-animation-duration: 0.8s;
+          animation-duration: 0.8s;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
+
+header h1.logo-title {
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  -webkit-animation-duration: 0.8s;
+          animation-duration: 0.8s;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  clip: rect(0px, 284px, 47px, 284px);
+  display: inline-block;
+  margin: 0;
+  height: 100%;
+  vertical-align: middle;
+  margin-top: 17%; }
+
+.wrap-center {
+  position: relative; }
+  .wrap-center .col-md-6 {
+    padding: 0; }
+
+@-webkit-keyframes logo-move {
+  0% {
+    left: 50%; }
+  100% {
+    left: 40%; } }
+
+@keyframes logo-move {
+  0% {
+    left: 50%; }
+  100% {
+    left: 40%; } }
+
+@-webkit-keyframes title-move {
+  0% {
+    left: 40%;
+    opacity: 0;
+    clip: rect(0px, 284px, 47px, 284px); }
+  100% {
+    left: 55%;
+    opacity: 1;
+    clip: rect(0px, 284px, 47px, 0px); } }
+
+@keyframes title-move {
+  0% {
+    left: 40%;
+    opacity: 0;
+    clip: rect(0px, 284px, 47px, 284px); }
+  100% {
+    left: 55%;
+    opacity: 1;
+    clip: rect(0px, 284px, 47px, 0px); } }
 
 /* 
 // Problem CSS - Mario
