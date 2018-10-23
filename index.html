@@ -8,6 +8,11 @@
     <link href="" rel="icon">
     <title>EnTomorrow</title>
 </head>
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/instafeed.min.js"></script>
+<script src="js/instafeedfunc.js"></script>
+
 <body>
     <!-- First Header part -->
     <header id="header">
@@ -218,16 +223,31 @@
         </div>
     </section>
 
-    <section id="social">
-        <div></div>
-        <div>
-            <h2>Contact</h2>
+    <section id="social" class="container">
+        <div class="row">
+            <div class="instagram col-sm">
+                <h2>INSTAGRAM</h2>
+                <div id = "instafeed" class="row gallery"></div>
+            </div>
+            <div class="contact col-sm">
+                <h2>Contact Us</h2>
+                    <form method="POST" action="">
+                        <div class="form-group">
+                            <input type="email" name="email" class="form-control" id="focusedInput" placeholder="Your email">
+                        </div>
+                        <div class="form-group">
+                        <textarea name="message" class="form-control" id="focusedInput" placeholder="Your message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-default btn-block">Send</button>
+                    </form>
+            </div>
         </div>
     </section>
+
     <footer id="footer">
         <div class="partner">
             <h3>Partners</h3>
-                <img src="img/Langara.jpeg" alt="Langara">
+                <img src="img/Langara.png" alt="Langara">
                 <img src="img/CleanTechLogo.png" alt="CleanTechLogo">
                 <img src="img/FacultyBrewing_Logo_BLACK.png" alt="FacultyBrewing_Logo_BLACK">
         </div>

@@ -7928,6 +7928,16 @@ section#ted iframe {
   min-height: 315px !important; }
 
 /* MICHIKA CODE*/
+#social h2 {
+  text-align: center; }
+
+#social .instagram img {
+  margin-bottom: 5%; }
+
+#social .contact textarea {
+  min-height: 100%; }
+
+/* MICHIKA CODE*/
 footer .partner {
   text-align: center; }
   footer .partner img {
