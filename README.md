@@ -4,6 +4,6 @@ Revise a website for Entommorow which researches optimal methods of growing edib
 ### What we used
 HTML, CSS, SCSS, javaScript
 
-### Contributer 
+### Contributor 
 Mario Kurniawan, Michika Hiratsuka
 

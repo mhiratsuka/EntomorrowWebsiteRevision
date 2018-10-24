@@ -32,6 +32,7 @@ nav{
 
 ul.navbar-nav{
 	color: $gray-100;
+	font-size: $font-size-sm;
 	li{
 		margin-left: 2em;
 	}
@@ -43,7 +44,7 @@ svg#main-logo{
 	// top:50%;
 	// left:50%;
 	// transform:translate(-50%,-50%);
-	animation-name: logo-move;
+	animation-name: logo-move-side;
 	animation-duration: 0.8s;
 	animation-timing-function: ease-in;
 	animation-delay: 3s;
@@ -51,6 +52,10 @@ svg#main-logo{
 	// animation-direction:
 	animation-fill-mode: forwards;
 	// animation-play-state:
+	@media only screen and (max-width: 768px) {
+		animation-name: logo-move-up;
+		margin-top: 2em;
+	}
 	
 }
 
@@ -62,14 +67,14 @@ header{
 		// top:50%;
 		// left:40%;
 		// transform:translate(-50%,-50%);
-		animation-name: title-move;
+		animation-name: title-move-side;
 		animation-duration: 0.8s;
 		animation-timing-function: ease-in;
 		animation-delay: 3s;
 		animation-iteration-count: 1;
 		// animation-direction:
 		animation-fill-mode: forwards;
-		// opacity: 0;
+		opacity: 0;
 		// animation-play-state:
 		clip:rect(0px,284px,47px,284px);
 		display:inline-block;
@@ -77,6 +82,10 @@ header{
 		height: 100%;
 		vertical-align: middle;
 		margin-top: 17%;
+		@media only screen and (max-width: 768px) {
+			text-align: center;
+			animation-name: title-move-up;
+		}
 	}
 }
 
@@ -90,20 +99,30 @@ header{
 }
 
 .row{
-	.col-title-logo{
-		width: 42%;
-		position: absolute;
-		left:130px;	
-	}	
-	.col-title-text{
-		width: 70%;
-		position: absolute;
-		right:-22px;	
+	@media only screen and (min-width: 768px) {
+		.col-title-logo{
+			width: 42%;
+			position: absolute;
+			left:130px;	
+		}	
+		.col-title-text{
+			width: 70%;
+			position: absolute;
+			right:-22px;	
+		}
 	}
 }
 
 
-@keyframes logo-move {
+@keyframes logo-move-up {
+    0%   {margin-top: 2em;}
+    // 25%  {left: 46%;}
+    // 50%  {left: 100px;}
+    // 75%  {left: 38%;}
+    100% {margin-top: 0em;}
+}
+
+@keyframes logo-move-side {
     0%   {left: 130px;}
     // 25%  {left: 46%;}
     // 50%  {left: 100px;}
@@ -111,10 +130,18 @@ header{
     100% {left: 0;}
 }
 
-@keyframes title-move {
+@keyframes title-move-side {
     0%   {right: 22px; opacity:0; clip:rect(0px,284px,47px,284px);}
     // 25%  {left: 46%;}
     // 50%  {left: 100px;}
     // 75%  {left: 38%;}
     100% {right: -22px; opacity:1; clip:rect(0px,300px,47px,0px);}
+}
+
+@keyframes title-move-up {
+    0%   {margin-top: -1.5em;; opacity:0; clip:rect(0px,284px,47px,284px);}
+    // 25%  {left: 46%;}
+    // 50%  {left: 100px;}
+    // 75%  {left: 38%;}
+    100% {margin-top: 0.5em;; opacity:1; clip:rect(0px,300px,47px,0px);}
 }
