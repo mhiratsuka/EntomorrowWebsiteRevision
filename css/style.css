@@ -8114,6 +8114,19 @@ header h1.logo-title {
 //  
 */
 #problem {
-  font-size: 100px; }
+  background-color: #8CA2A2;
+  padding: 2em 0 3em 0;
+  color: #fff; }
+  #problem h1 {
+    text-align: center; }
+
+.cmp-image {
+  text-align: center; }
+
+.story-image-container, .story-text-container {
+  margin-top: 2em; }
+
+#insect {
+  text-align: center; }
 
 /*# sourceMappingURL=map/style.css.map */
