@@ -7917,6 +7917,80 @@ section {
   margin-top: 2em; }
 
 /* MICHIKA CODE*/
+#team h2 {
+  text-align: center; }
+
+#team .col-sm.teamsum {
+  margin-top: 2%; }
+
+#member {
+  margin-top: 2%; }
+  #member .team-item {
+    position: relative;
+    text-align: center; }
+  #member .team-image {
+    position: relative;
+    overflow: hidden; }
+  #member .team-image img {
+    width: auto;
+    -webkit-border-radius: 10px;
+            border-radius: 10px;
+    -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.9);
+            box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.9); }
+  #member .team-image:after {
+    position: absolute;
+    background: transparent;
+    content: " ";
+    display: block;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1; }
+  #member .team-detail {
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+    bottom: 100%;
+    left: 0;
+    z-index: 2;
+    text-align: center;
+    font-size: 12px;
+    color: #aaa;
+    padding: 20px; }
+  #member .team-social a {
+    color: #aaa;
+    padding: 30px 40px;
+    font-size: 20px; }
+  #member .team-social.roshan a {
+    padding: 10% 10%; }
+  #member .team-social a:hover {
+    color: #FFF;
+    text-decoration: none; }
+  #member .team-descr {
+    margin: 20px 0 0; }
+  #member .team-name {
+    font-size: 20px;
+    color: #111; }
+  #member .team-role {
+    font-size: 15px;
+    color: #484848; }
+  #member .team-item:hover .team-image:after {
+    background: rgba(0, 0, 0, 0.6); }
+  #member .team-item:hover .team-detail {
+    opacity: 1;
+    bottom: 50%;
+    -webkit-transform: translateY(50%);
+    -ms-transform: translateY(50%);
+    transform: translateY(50%);
+    -webkit-transition: .5s ease;
+    -o-transition: .5s ease;
+    transition: .5s ease; }
+  #member .team-item .team-detail {
+    -webkit-transition: .5s ease;
+    -o-transition: .5s ease;
+    transition: .5s ease; }
+
 /* MICHIKA CODE*/
 img {
   max-width: 100%; }
