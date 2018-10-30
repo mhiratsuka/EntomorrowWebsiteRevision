@@ -7917,11 +7917,26 @@ section {
   margin-top: 2em; }
 
 /* MICHIKA CODE*/
-#team h2 {
-  text-align: center; }
-
-#team .col-sm.teamsum {
+#team .col-sm {
   margin-top: 2%; }
+
+#team .col-md-12 h2 {
+  font-size: 0.5em; }
+
+#team .col-md-12 h3 {
+  font-size: 0.7em; }
+
+#team .col-md-12 p {
+  font-size: 0.5em; }
+
+#team .col-xl-6 h2, #team .col-lg-6 h2 {
+  font-size: 0.9em; }
+
+#team .col-xl-6 h3, #team .col-lg-6 h3 {
+  font-size: 1.2em; }
+
+#team .col-xl-6 p, #team .col-lg-6 p {
+  font-size: 1.3em; }
 
 #member {
   margin-top: 2%; }
