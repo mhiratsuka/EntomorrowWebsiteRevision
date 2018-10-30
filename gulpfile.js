@@ -18,11 +18,10 @@ gulp.task('browser-reload', function () {
  * Wait for jekyll-build, then launch the Server
  */
 gulp.task('browser-sync', ['sass'], function() {
-    browserSync({
-        server: {
-            baseDir: './'
-        }
-    });
+    browserSync({server: {baseDir: './'},
+            // host: '192.168.43.70'
+            host: '192.168.0.6'
+        });
 });
 
 /**
