@@ -7969,6 +7969,9 @@ section {
     font-size: 1.3em; } }
 
 /* MICHIKA CODE*/
+#team img {
+  max-width: 100%; }
+
 #team h3 {
   margin-bottom: 10%; }
 
@@ -8045,15 +8048,14 @@ section {
     transition: .5s ease; }
 
 /* MICHIKA CODE*/
-img {
-  max-width: 100%; }
-
-section#ted h2 {
-  text-align: center; }
-
-section#ted iframe {
+#ted iframe {
   margin-bottom: 1em;
-  min-height: 315px !important; }
+  min-height: 315px !important;
+  width: 49%;
+  padding: 0; }
+  @media screen and (max-width: 763px) {
+    #ted iframe {
+      width: 100%; } }
 
 /* MICHIKA CODE*/
 #social h2 {
@@ -8067,13 +8069,23 @@ section#ted iframe {
 
 /* MICHIKA CODE*/
 footer .partner {
-  text-align: center; }
+  margin-bottom: 2%; }
+  footer .partner h3 {
+    margin-bottom: 5%; }
   footer .partner img {
-    max-width: 30%;
+    max-width: 80%;
     height: auto; }
 
+@media screen and (max-width: 576px) {
+  footer .partner .col-6 {
+    margin-bottom: 10%; } }
+
 footer .copyright {
-  text-align: center; }
+  text-align: center;
+  background-color: #212529;
+  color: #f8f9fa;
+  padding-top: 1%;
+  padding-bottom: 1%; }
 
 /* 
 // Header CSS - Mario

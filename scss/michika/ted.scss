@@ -1,16 +1,16 @@
 /* MICHIKA CODE*/
-
-img{
-    max-width: 100%;
-}
-
-section#ted{
-    h2{
-        text-align: center;
-    }
+#ted{
     iframe{
         margin-bottom: 1em;
         min-height: 315px !important;
+        width: 49%;
+        padding: 0;
+        
+        @media screen and (max-width: 763px) {
+            width: 100%;
+        }
     }
 }
+
+
 
