@@ -14,7 +14,6 @@
 
 
 .fontstyle {
-    // mobile size
     h2 {    
         text-transform: uppercase;
     }
@@ -23,6 +22,7 @@
         text-transform: uppercase;
     }
 
+    // mobile size
     @media screen and (max-width: 763px) {
         h2 {
             font-size: 0.6em;

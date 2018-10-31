@@ -1,14 +1,30 @@
 /* MICHIKA CODE*/
 footer{
     .partner{
-        text-align: center;
-            img{
-                max-width: 30%;
-                height: auto;
-            }
+        margin-bottom: 2%;
+
+        h3 {
+            margin-bottom: 5%;
+        }
+        img{
+            max-width: 80%;
+            height: auto;
+        }
     }
+
+    // mobile size
+    @media screen and (max-width: 576px) {
+        .partner .col-6 {
+            margin-bottom: 10%;
+        }
+    }
+
     .copyright{
         text-align: center;
+        background-color: #212529;
+        color: #f8f9fa;
+        padding-top: 1%;
+        padding-bottom: 1%;
     }
     
 }
