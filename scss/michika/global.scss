@@ -1,0 +1,66 @@
+.linedecaration {
+    position: relative;
+}
+
+.linedecaration:after {
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    width: 60px;
+    height: 4px;
+    content: '';
+    background: #249384;
+}
+
+
+.fontstyle {
+    // mobile size
+    h2 {    
+        text-transform: uppercase;
+    }
+
+    h3{
+        text-transform: uppercase;
+    }
+
+    @media screen and (max-width: 763px) {
+        h2 {
+            font-size: 0.6em;
+        }
+        h3{
+            font-size: 0.9em;
+
+        }
+        p {
+            font-size: 1em;
+        }
+    }
+
+    // tablet
+    @media screen and (max-width: 992px) and (min-width:763px){
+        h2 {
+            font-size: 0.6em;
+        }
+        h3{
+            font-size: 0.9em;
+
+        }
+        p {
+            font-size: 1em;
+        }
+    } 
+
+    // desktop
+    @media screen and (min-width: 992px){
+        h2 {
+            font-size: 0.9em;
+        }
+        h3{
+            font-size: 1.2em;
+        }
+        p {
+            font-size: 1.3em;
+        }
+    }
+   
+}

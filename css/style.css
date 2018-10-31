@@ -7916,43 +7916,71 @@ body {
 section {
   margin-top: 2em; }
 
+.linedecaration {
+  position: relative; }
+
+.linedecaration:after {
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 60px;
+  height: 4px;
+  content: '';
+  background: #249384; }
+
+.fontstyle h2 {
+  text-transform: uppercase; }
+
+.fontstyle h3 {
+  text-transform: uppercase; }
+
+@media screen and (max-width: 763px) {
+  .fontstyle h2 {
+    font-size: 0.6em; }
+  .fontstyle h3 {
+    font-size: 0.9em; }
+  .fontstyle p {
+    font-size: 1em; } }
+
+@media screen and (max-width: 992px) and (min-width: 763px) {
+  .fontstyle h2 {
+    font-size: 0.6em; }
+  .fontstyle h3 {
+    font-size: 0.9em; }
+  .fontstyle p {
+    font-size: 1em; } }
+
+@media screen and (min-width: 992px) {
+  .fontstyle h2 {
+    font-size: 0.9em; }
+  .fontstyle h3 {
+    font-size: 1.2em; }
+  .fontstyle p {
+    font-size: 1.3em; } }
+
 /* MICHIKA CODE*/
-#team .col-sm {
+#team h3 {
+  margin-bottom: 10%; }
+
+@media screen and (max-width: 763px) {
+  #team h2 {
+    margin-top: 4%; } }
+
+#team #member {
   margin-top: 2%; }
-
-#team .col-md-12 h2 {
-  font-size: 0.5em; }
-
-#team .col-md-12 h3 {
-  font-size: 0.7em; }
-
-#team .col-md-12 p {
-  font-size: 0.5em; }
-
-#team .col-xl-6 h2, #team .col-lg-6 h2 {
-  font-size: 0.9em; }
-
-#team .col-xl-6 h3, #team .col-lg-6 h3 {
-  font-size: 1.2em; }
-
-#team .col-xl-6 p, #team .col-lg-6 p {
-  font-size: 1.3em; }
-
-#member {
-  margin-top: 2%; }
-  #member .team-item {
+  #team #member .team-item {
     position: relative;
     text-align: center; }
-  #member .team-image {
+  #team #member .team-image {
     position: relative;
     overflow: hidden; }
-  #member .team-image img {
+  #team #member .team-image img {
     width: auto;
     -webkit-border-radius: 10px;
             border-radius: 10px;
     -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.9);
             box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.9); }
-  #member .team-image:after {
+  #team #member .team-image:after {
     position: absolute;
     background: transparent;
     content: " ";
@@ -7962,7 +7990,7 @@ section {
     top: 0;
     left: 0;
     z-index: 1; }
-  #member .team-detail {
+  #team #member .team-detail {
     position: absolute;
     width: 100%;
     opacity: 0;
@@ -7973,26 +8001,26 @@ section {
     font-size: 12px;
     color: #aaa;
     padding: 20px; }
-  #member .team-social a {
+  #team #member .team-social a {
     color: #aaa;
     padding: 30px 40px;
     font-size: 20px; }
-  #member .team-social.roshan a {
-    padding: 10% 10%; }
-  #member .team-social a:hover {
+  #team #member .team-social.roshan a {
+    padding: 9% 9%; }
+  #team #member .team-social a:hover {
     color: #FFF;
     text-decoration: none; }
-  #member .team-descr {
+  #team #member .team-descr {
     margin: 20px 0 0; }
-  #member .team-name {
-    font-size: 20px;
+  #team #member .team-name {
+    font-size: 1.2em;
     color: #111; }
-  #member .team-role {
-    font-size: 15px;
+  #team #member .team-role {
+    font-size: 0.9em;
     color: #484848; }
-  #member .team-item:hover .team-image:after {
+  #team #member .team-item:hover .team-image:after {
     background: rgba(0, 0, 0, 0.6); }
-  #member .team-item:hover .team-detail {
+  #team #member .team-item:hover .team-detail {
     opacity: 1;
     bottom: 50%;
     -webkit-transform: translateY(50%);
@@ -8001,7 +8029,7 @@ section {
     -webkit-transition: .5s ease;
     -o-transition: .5s ease;
     transition: .5s ease; }
-  #member .team-item .team-detail {
+  #team #member .team-item .team-detail {
     -webkit-transition: .5s ease;
     -o-transition: .5s ease;
     transition: .5s ease; }
