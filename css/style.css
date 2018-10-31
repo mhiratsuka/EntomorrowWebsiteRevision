@@ -8071,11 +8071,44 @@ footer .copyright {
 // Start of Header CSS
 //  
 */
+/* Variables */
+/* Mixins */
 #banner {
-  height: -webkit-calc(100vh - 55px);
-  height: calc(100vh - 55px);
+  height: 100vh;
   background-color: #8CA2A2;
+  position: relative;
+  -webkit-animation: bgFadeIn 3s ease-in both;
+          animation: bgFadeIn 3s ease-in both;
   position: relative; }
+  #banner:before {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url("/img/banner-image.jpg");
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/img/banner-image.jpg");
+    background: -o-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/img/banner-image.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/img/banner-image.jpg");
+    background-color: #CCCCCC;
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    bottom: 0;
+    content: ' ';
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1; }
+
+@-webkit-keyframes bgFadeIn {
+  0% {
+    background-color: #8ca2a2; }
+  100% {
+    background-color: rgba(140, 162, 162, 0); } }
+
+@keyframes bgFadeIn {
+  0% {
+    background-color: #8ca2a2; }
+  100% {
+    background-color: rgba(140, 162, 162, 0); } }
 
 nav {
   height: 55px; }
@@ -8109,7 +8142,7 @@ svg#main-logo {
           animation-iteration-count: 1;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards; }
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 576px) {
     svg#main-logo {
       -webkit-animation-name: logo-move-up;
               animation-name: logo-move-up;
@@ -8136,8 +8169,9 @@ header h1.logo-title {
   margin: 0;
   height: 100%;
   vertical-align: middle;
-  margin-top: 17%; }
-  @media only screen and (max-width: 768px) {
+  margin-top: 17%;
+  color: #f8f9fa; }
+  @media only screen and (max-width: 576px) {
     header h1.logo-title {
       text-align: center;
       -webkit-animation-name: title-move-up;
@@ -8149,6 +8183,9 @@ header h1.logo-title {
   height: 226px; }
   .wrap-center .col-md-6 {
     padding: 0; }
+  @media only screen and (max-width: 576px) {
+    .wrap-center {
+      width: 100%; } }
 
 @media only screen and (min-width: 768px) {
   .row .col-title-logo {

@@ -5,12 +5,66 @@
 //  
 */
 
+/* Variables */
+$bg-image: "/img/banner-image.jpg";
+$bg-overlay: rgba(0,0,0,0.7);
 
+$primary-color: #FFFFFF;
+$primary-font: "Amatic SC", cursive;
+$secondary-color: #FFF0A5;
+$secondary-font: "Abril Fatface", cursive;
+$body-color: #999999;
+$body-font: Helvetica, Arial, sans-serif;
+
+
+/* Mixins */
+@mixin bg-images(
+    $image-path: "/img/banner-image.jpg",
+    $overlay-color: rgba(255,255,255,0.8),
+    $position: center center) {
+
+    animation: bgFadeIn 3s ease-in both;
+    position: relative;
+
+    &:before {
+        background:
+            linear-gradient(
+              $overlay-color,
+              $overlay-color
+            ),
+            url($image-path);
+        background-color: #CCCCCC;
+        // background-attachment: fixed;
+        background-position: $position;
+        background-repeat: no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        bottom: 0;
+        content: ' ';
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: -1;
+    }
+
+    @keyframes bgFadeIn {
+        0% { background-color: rgba(140,162,162, 1); }
+        100% { background-color: rgba(140,162,162, 0); }
+    }
+}
 
 #banner{
-	height: calc(100vh - 55px);
+	// height: calc(100vh - 55px);
+	height: 100vh;
 	background-color: #8CA2A2;
 	position: relative;
+	@include bg-images(
+    $image-path: $bg-image,
+    $overlay-color: $bg-overlay
+  );
 
 }
 
@@ -52,7 +106,7 @@ svg#main-logo{
 	// animation-direction:
 	animation-fill-mode: forwards;
 	// animation-play-state:
-	@media only screen and (max-width: 768px) {
+	@media only screen and (max-width: map-get($grid-breakpoints, sm)) {
 		animation-name: logo-move-up;
 		margin-top: 2em;
 	}
@@ -82,7 +136,8 @@ header{
 		height: 100%;
 		vertical-align: middle;
 		margin-top: 17%;
-		@media only screen and (max-width: 768px) {
+		color: $gray-100;
+		@media only screen and (max-width: map-get($grid-breakpoints, sm)) {
 			text-align: center;
 			animation-name: title-move-up;
 		}
@@ -95,6 +150,9 @@ header{
 	height: 226px;
 	.col-md-6{
 		padding: 0;
+	}
+	@media only screen and (max-width: map-get($grid-breakpoints, sm)) {
+		width: 100%;
 	}
 }
 
