@@ -9,10 +9,39 @@
 	background-color: #8CA2A2;
 	padding: 2em 0 3em 0;
 	color: #fff;
+	.row{
+		// flex-direction:column;
+	}
 	h1{
-		text-align:center;
+		display: block;
+	}
+	h2{
+		display: block;
+	}
+
+	img{
+		width: 100%;
+		max-width: 300px;
+		margin: 0 auto;
+		display: block;
+	}
+	.desc{
+		margin-top: 1em;
+		text-align: center;
+		h2{
+			font-weight: 400;
+	        letter-spacing: 2px;
+	        line-height: 1.5;
+	        font-size: $font-size-base;
+	        margin: 0 3em;
+		}
+	}
+
+	.problem-wrapper{
+		margin-top: 2em;
 	}
 }
+
 
 .cmp-image{
 	text-align: center;
