@@ -8202,6 +8202,19 @@ footer .copyright {
   padding-top: 1%;
   padding-bottom: 1%; }
 
+#thankspage {
+  text-align: center; }
+  #thankspage h2 {
+    font-size: 3rem; }
+  #thankspage img {
+    max-width: 220px;
+    height: auto;
+    margin-top: 5%;
+    margin-bottom: 5%; }
+  #thankspage a.gobackhome {
+    color: #249384;
+    text-decoration: underline; }
+
 /* 
 // Header CSS - Mario
 //
