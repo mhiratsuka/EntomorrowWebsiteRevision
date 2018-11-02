@@ -3,7 +3,8 @@
     iframe{
         margin-bottom: 1em;
         min-height: 315px !important;
-        width: 50%;
+        // width: 50%;
+        width: 100%;
         padding: 0;
         @media screen and (max-width: map-get($grid-breakpoints, md)) {
         	width: 100%;

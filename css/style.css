@@ -7989,7 +7989,7 @@ section {
   .fontstyle h3 {
     font-size: 1.2em; }
   .fontstyle p {
-    font-size: 1.3em; } }
+    font-size: 1.5em; } }
 
 /* MICHIKA CODE*/
 .navbar .menu-icon {
@@ -8121,6 +8121,9 @@ section {
 #team h3 {
   margin-bottom: 10%; }
 
+#team p {
+  font-weight: 500; }
+
 @media screen and (max-width: 763px) {
   #team h2 {
     margin-top: 4%; } }
@@ -8198,7 +8201,7 @@ section {
 #ted iframe {
   margin-bottom: 1em;
   min-height: 315px !important;
-  width: 50%;
+  width: 100%;
   padding: 0; }
   @media screen and (max-width: 768px) {
     #ted iframe {
@@ -8630,6 +8633,7 @@ header h1.logo-title {
   text-decoration: underline; }
 
 #research h3 {
-  margin-bottom: 2em; }
+  margin-bottom: 2em;
+  color: #e6e6e6; }
 
 /*# sourceMappingURL=map/style.css.map */
