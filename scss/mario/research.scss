@@ -229,10 +229,15 @@ $form-group-margin-bottom:       30px !default;
 
 // Custom Design
 
-#research{
-	h3{
+#research {
+	h3.linedecaration{
 		margin-bottom: 2em;
-		color: #e6e6e6;
+	}
+	
+	.project{
+		h3{
+			color: #e6e6e6;
+		}
 	}
 }
 
