@@ -6,7 +6,6 @@
 */
 
 html{
-
 }
 
 a{
@@ -15,6 +14,7 @@ a{
 
 body{
 	font-family: 'Raleway', sans-serif;
+	background-color: #fffffa;
 	// background-color: $black;
 	// color: $body-color;
 }
@@ -23,8 +23,28 @@ section{
 	margin-top: 2em;
 }
 
+.container-70{
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	@media only screen and (max-width: map-get($grid-breakpoints, sm)) {
+		margin: 0 15px;
+		width: auto;
+	}
+}
+
 .container-95{
 	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	@media only screen and (max-width: map-get($grid-breakpoints, sm)) {
+		margin: 0 15px;
+		width: auto;
+	}
+}
+
+.container-96{
+	width: 96%;
 	margin-left: auto;
 	margin-right: auto;
 	@media only screen and (max-width: map-get($grid-breakpoints, sm)) {
