@@ -8632,8 +8632,10 @@ header h1.logo-title {
   font-weight: 400;
   text-decoration: underline; }
 
-#research h3 {
-  margin-bottom: 2em;
+#research h3.linedecaration {
+  margin-bottom: 2em; }
+
+#research .project h3 {
   color: #e6e6e6; }
 
 /*# sourceMappingURL=map/style.css.map */
