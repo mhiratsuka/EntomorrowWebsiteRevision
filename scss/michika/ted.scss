@@ -3,14 +3,22 @@
     iframe{
         margin-bottom: 1em;
         min-height: 315px !important;
-        width: 49%;
+        width: 50%;
         padding: 0;
-        
-        @media screen and (max-width: 763px) {
-            width: 100%;
+        @media screen and (max-width: map-get($grid-breakpoints, md)) {
+        	width: 100%;
         }
+        
+        
     }
 }
 
+.video-container{
+	display: flex;
+	@media screen and (max-width: map-get($grid-breakpoints, md)) {
+        flex-direction: column;
+    }
+
+}
 
 
