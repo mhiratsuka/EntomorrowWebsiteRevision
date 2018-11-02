@@ -8514,9 +8514,12 @@ header h1.logo-title {
         .project .desc .con .icon span {
           display: inline;
           padding-right: 5px; }
+          @media screen and (max-width: 576px) {
+            .project .desc .con .icon span {
+              display: inline; } }
           .project .desc .con .icon span a {
             color: #cccccc;
-            padding: 5px;
+            padding: 8px 10px;
             background: #333333;
             -webkit-border-radius: 4px;
             border-radius: 4px; }
@@ -8541,7 +8544,7 @@ header h1.logo-title {
         color: #fff; }
     .project .desc span {
       display: block;
-      color: #999999;
+      color: #e6e6e6;
       font-size: 13px;
       -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
       -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
@@ -8556,7 +8559,7 @@ header h1.logo-title {
     @media screen and (max-width: 576px) {
       .project .desc {
         opacity: 1;
-        background: rgba(0, 0, 0, 0.4); }
+        background: rgba(0, 0, 0, 0.75); }
         .project .desc h3 {
           font-style: 28px;
           -webkit-transform: translate3d(0, 0, 0);

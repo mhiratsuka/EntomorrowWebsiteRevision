@@ -125,9 +125,12 @@ $form-group-margin-bottom:       30px !default;
 				span{
 					display: inline;
 					padding-right: 5px;
+					@media screen and(max-width: map-get($grid-breakpoints, sm)){
+						display: inline;
+					}
 					a{
 						color: lighten($brand-black,80%);
-						padding: 5px;
+						padding: 8px 10px;
 						background: lighten($brand-black,20%);
 						@include border-radius(4px);
 					}
@@ -154,7 +157,7 @@ $form-group-margin-bottom:       30px !default;
 		}
 		span{
 			display: block;
-			color: lighten($brand-black,60%);
+			color: lighten($brand-black,90%);
 			font-size: 13px;
 			-webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
 			transition: transform 0.3s, opacity 0.3s;
@@ -166,7 +169,7 @@ $form-group-margin-bottom:       30px !default;
 		}
 		@media screen and(max-width: map-get($grid-breakpoints, sm)){
 			opacity: 1;
-			background: rgba(0,0,0,.4);
+			background: rgba(0,0,0,.75);
 			h3{
 				font-style: 28px;
 				-webkit-transform: translate3d(0, 0, 0);
